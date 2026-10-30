@@ -1,0 +1,120 @@
+.logo img
+        {
+            background-color: yellow;
+            height: 30px;
+            width: 70px;
+        }
+        nav
+        {
+           display: flex;
+           justify-content:space-around;
+           align-items: center;
+           gap:2px;
+        }
+        
+        
+        .right ul {
+            display: flex; 
+            gap: 40px;  
+        }
+         .right ul li{
+            list-style: none;
+            align-items:center;
+            
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin: 65px;
+            font-family: sans-serif;
+        }
+        .first span{   
+            font-size: 30px;
+        }
+        .first p{
+            font-size: 23px;
+            width: 60vw;
+            text-align: center;
+        }
+        .first button
+        {
+            background-color: #02b6d1;
+            padding: 10px 20px ;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .flex
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-family: sans-serif;
+            margin-bottom: 8px;
+        }
+        .small{
+            font-size: 12px;
+        }
+        .second
+        {
+            max-width: 80vw;
+            margin: auto;
+            
+        }
+        .btn
+        {
+            background-color: #02b6d1;
+            padding: 10px 10px ;
+            margin: 12px 0px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            
+        }
+        .btn a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .green{
+            background-color: #5c8b5c;
+        }
+        .item
+        {
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(191, 227, 251);
+            border-radius: 8px;
+            
+        }
+        .item-lang
+        {
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .grid
+        {
+            display: grid;
+            /* grid-template-columns:1fr 1fr 1fr; */
+            gap: 12px;
+        }
+        @media screen and (max-width:800px)
+        {
+        .grid
+        {
+          
+            grid-template-columns: 1fr ;
+           
+        }
+        }

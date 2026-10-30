@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <style>
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+            text-align: center;
+        }
+        h2{
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: blue ;
+            /* text-decoration-style: double; */
+            text-decoration-thickness: 4px;
+            /* text indent is use for spaces at starting */
+            text-indent: 35px;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-weight:bolder;
+            font-size: 20px;
+            /* for underline */
+            text-decoration: underline;
+            /* for line spaces we use this line height */
+            line-height: 1;
+        }
+        .lorem
+        {
+            border: 5px solid red;
+            width:70px;
+            /* box se bahir ka text hide krne k liye */
+             text-overflow: ellipsis;
+             overflow: scroll;
+
+            /* remaining text ko dotted se show krne k liye ellipsis use krty hain
+            text-overflow: ellipsis; */
+
+            /* halfword next line pe chla jaiga */
+            /* word-break: break-all; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is  a paragraph</p>
+        <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt provident aperiam! Iste excepturi odit quas labore. Exercitationem illo fugiat ex quaerat itaque? Beatae, cupiditate! Odio deleniti a ipsum recusandae?</div>
+    </div>
+</body>
+</html>

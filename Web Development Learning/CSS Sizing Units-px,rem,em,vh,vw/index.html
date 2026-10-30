@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            /* ye root element hai  */
+            font-size: 12px;
+        }
+
+        .box {
+            font-size: 20px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            /* left and right margin  */
+            background-color: aquamarine;
+
+
+        }
+
+        .container {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            min-height: 80vh;
+            margin: 20px auto;
+            /*top margin spaces  */
+        }
+
+        .container>div {
+            width: 50%;
+            border: 3px solid red;
+        }
+
+        .container>div>div {
+            width: 50%;
+            border: 2px solid blue;
+        }
+
+        .mycount {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: yellow;
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nemo obcaecati pariatur maxime mollitia
+            necessitatibus? Molestias, fuga maxime provident laudantium quam illo beatae hic omnis inventore tempora et,
+            harum iusto pariatur a odit animi voluptas consectetur officia fugit itaque aperiam amet. Sapiente ipsa
+            maiores molestias.
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quisquam repellendus laboriosam?
+                Deserunt consequuntur excepturi sit maiores quam ducimus quo, voluptates vel ratione!
+            </div>
+        </div>
+
+    </div>
+    <div class="mycount">
+        I am another container
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Seletor</title>
+    <style>
+
+        /* Element selector  */
+        div{
+            /* background-color: red; */
+        }
+
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #green
+        {
+            background-color: green;
+        }
+
+        /* child selector main p direct child ho div ka. div k foran baad p ho*/
+        div >p{
+            color: rgb(164, 213, 85);
+            background-color: rgb(52, 34, 13);
+        }
+
+        /* Desendant Selector  */
+        /* p jahan pe bhi ho but hona div k andar chahye */
+        div p{
+            color: rgb(3, 3, 52);
+            background-color: rgb(181, 112, 26);
+        }
+
+        /* universal selector */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        /* pseudo selector  */
+        a:visited{
+            color: rgb(247, 247, 53);
+        }
+        a:link{
+            color: blue;
+        }
+        a:active
+        {
+            background-color: aqua;
+        }
+        a:hover
+        {
+            background-color: rgb(213, 250, 241);
+        }
+        p:first-child
+        {
+            background-color: rgb(235, 225, 41);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <p>
+            i am 1st P
+        </p>
+        <P>
+            i am 2nd p
+        </P>
+    </main>
+    <div class="red">
+        i am div of red class
+    </div>
+
+    <div id="green">
+        i am div of green id
+    </div>
+    <div>
+        <p>
+            i am direct p of div
+        </p>
+    </div>
+
+     <div>
+        <main>
+            <p>i am a p of main in div</p>
+            <p>i am 2nd p of main in div</p>
+        </main>
+    </div>
+
+    <a target="_blank"  href="https://www.google.com">Go to Google</a>
+    <br>
+    <a target="_blank"  href="https://www.youtube.com">Go to Youtube</a>
+</body>
+</html>

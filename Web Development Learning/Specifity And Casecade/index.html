@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specifity of element Selector is 1 */
+        h1{
+            color: aqua;
+        }
+        /* Specifity jab same hogi tab last main jo function hoga wo apply hoga e.g is main purple color select hoga */
+        /* The specifity of class Selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* The specifity of class Selector is 10 */
+        /* jahan pe multiple selector hoon wahan pe value ko add krienge jis ki value max hogi wohi color show hoga e.g h1.cred =1+10  */
+        /* 1 of h1 & 10 cred tu is liye is iska color red hojaiga  */
+        h1.cred{
+            color: red;
+        }
+        /* The specifity of class Selector is 10 */
+        .cpurple
+        {
+            color: purple;
+        }
+        /* Attribute Selector */
+        [data-x=a]{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="yellow cred cpurple " data-x="a">CSS Specifity</h1>
+
+    <h3>Casecade Algorithem</h3>
+    <ol type="A">
+        <li >Postion and Order of Apperance</li>
+        <li>Specifity</li>
+        <li>Origin</li>
+        <li>Importance</li>
+    </ol>
+    <ol>Priorty of Selector:
+        <li>Inline Style(Most Priorty  )</li>
+        <!-- but Important keyword jahan lgienge wahan pe inline bhi override ho jaiga -->
+        <li>ID  Selector</li>
+        <li>Class and Attribute  Selector</li>
+        <li>Element Selector</li>
+        <li>Universal Selector</li>
+
+    </ol>
+
+    <br>
+    <ul type="square">Value of Selector:
+        <li>Inline Style(Most Priorty )=1000</li>
+        <!-- but Important keyword jahan lgienge wahan pe inline bhi override ho jaiga -->
+        <li>ID  Selector=100</li>
+        <li>Class and Attribute  Selector=10</li>
+        <li>Element Selector=1</li>
+        <li>Universal Selector=0</li>
+
+    </ul>
+</body>
+</html>

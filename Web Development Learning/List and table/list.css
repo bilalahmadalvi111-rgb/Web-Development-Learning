@@ -1,0 +1,11 @@
+body
+{
+    background-color: rgb(196, 245, 245);
+}
+table
+{
+    background-color: lab(97.26% -20.59 86.04);
+}
+td{
+    background-color: rgb(244, 191, 123);
+}

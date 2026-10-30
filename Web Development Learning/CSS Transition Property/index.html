@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            height: 70vh;
+            width: 70vw;
+            background-color: antiquewhite;
+        }
+        .box
+        {
+            height: 50px;
+            width: 50px;
+            background-color: brown;
+            justify-content: center;
+           text-align: center;
+           align-content: center;
+           transition-duration: 2s;
+           transition-property: ;
+            transition: bilal 3s ease-in-out 1s  1 ;
+     
+
+        }
+
+        @keyframes bilal{
+            from{
+                background-color: bisque;
+            }
+            to{
+                background-color: red;
+                transform: translateX(1000px);
+            }   
+        } 
+         @keyframes bilal2
+            {
+                0%{
+                    transform:rotate(100deg);
+                }
+                20%{
+                    transform:rotate(300deg);
+                }
+                50%{
+                    transform:rotate(100deg);
+                }
+                80%{
+                    transform:rotate(100deg);
+                }
+                100%{
+                    transform:rotate(100deg);
+                }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Property</title>
+    <style>
+        .box
+        {
+            border: 3px solid blue;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;/*like as x-axis*/
+            align-items: center;/*like as y-axis*/
+            /* transform: rotate(45deg); */
+            /* transform: rotateX(60deg); */
+            /* transform: rotateY(180deg); */
+            /* transform: rotateZ(60deg); */
+            /* transform: scale(2);   for increasing size */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2);2 means double or 2 times */
+            /* transform: skew(25deg); */
+            /* transform: translate(60%);Apni jga se age transfor hojaiga */
+            /* All property in one line like as  */
+            /* transform: rotateY(45deg) skewX(30deg) translateY(30%) ;  */
+            transform-origin: 10%;
+            transform: rotate(40deg);
+
+        }
+        .container
+        {
+            background-color:antiquewhite;
+            border: 2px solid black;
+            width: 75vw;
+            height: 75vh;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+    
+</body>
+</html>
